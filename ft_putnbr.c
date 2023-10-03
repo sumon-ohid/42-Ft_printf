@@ -6,11 +6,11 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:32 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 12:57:25 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 13:21:07 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 void	ft_putnbr(int n)
 {

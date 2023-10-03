@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:43 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 11:09:35 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 13:20:01 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdio.h>
 # include <unistd.h>
 
-//int		main(void);
+int		main(void);
 int		ft_printf(const char *str, ...);
 void	ft_print_c(va_list arg);
 void	ft_print_s(va_list args);

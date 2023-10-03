@@ -6,11 +6,11 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:17 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 13:04:57 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 13:20:41 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *str, ...)
 {
