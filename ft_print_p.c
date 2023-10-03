@@ -6,16 +6,14 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:06 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 12:56:41 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 13:03:40 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_print_p(va_list args)
+int	ft_print_p(void)
 {
-	int	per;
-
-	per = va_arg(args, int);
 	ft_putchar('%');
+	return (1);
 }
