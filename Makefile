@@ -6,7 +6,7 @@
 #    By: msumon <msumon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/02 09:03:46 by msumon            #+#    #+#              #
-#    Updated: 2023/10/03 12:30:51 by msumon           ###   ########.fr        #
+#    Updated: 2023/10/03 12:53:59 by msumon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,12 +20,12 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-TARGET = printf
+NAME = printf
 
-all: $(TARGET)
+all: $(NAME)
 
-$(TARGET): $(OBJ)
-	$(CC) $(CFLAGS) -o $(TARGET) $(OBJ)
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -34,7 +34,7 @@ clean:
 	rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(TARGET)
+	rm -f $(NAME)
 
 re: fclean all
 
