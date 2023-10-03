@@ -6,7 +6,7 @@
 #    By: msumon <msumon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/02 09:03:46 by msumon            #+#    #+#              #
-#    Updated: 2023/10/03 13:00:04 by msumon           ###   ########.fr        #
+#    Updated: 2023/10/03 13:00:29 by msumon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-NAME = libftprintf.c
+NAME = libftprintf.a
 
 all: $(NAME)
 
