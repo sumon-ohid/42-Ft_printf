@@ -6,7 +6,7 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:17 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 12:57:03 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 13:04:57 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_printf(const char *str, ...)
 			if (str[i + 1] == 'd')
 				ft_print_d(args);
 			if (str[i + 1] == '%')
-				ft_print_p(args);
+				ft_print_p();
 			if (str[i + 1] == 'i')
 				ft_print_i(args);
 			if (str[i + 1] == 'u')
