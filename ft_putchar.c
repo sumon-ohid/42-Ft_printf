@@ -6,13 +6,13 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:29 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/02 09:03:30 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 12:57:18 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }

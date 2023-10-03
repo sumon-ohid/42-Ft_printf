@@ -6,22 +6,22 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:13 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/02 09:03:14 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 12:56:48 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void    ft_print_s(va_list args)
+void	ft_print_s(va_list args)
 {
-    char *str;
-    int i;
+	char	*str;
+	int		i;
 
-    i = 0;
-    str = va_arg(args, char*);
-    while(str[i])
-    {
-        write(1, &str[i], 1);
-        i++;
-    }
+	i = 0;
+	str = va_arg(args, char *);
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
 }

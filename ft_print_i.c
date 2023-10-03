@@ -6,16 +6,16 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:11:59 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 11:29:08 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 12:56:34 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void    ft_print_i(va_list args)
+void	ft_print_i(va_list args)
 {
-    int i;
+	int	i;
 
-    i = va_arg(args, int);
-    ft_putnbr(i);
+	i = va_arg(args, int);
+	ft_putnbr(i);
 }

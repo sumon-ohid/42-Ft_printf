@@ -6,7 +6,7 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:06 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 11:27:14 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 12:56:41 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_print_p(va_list args)
 {
-    int per;
+	int	per;
 
-    per = va_arg(args, int);
-    ft_putchar('%');
+	per = va_arg(args, int);
+	ft_putchar('%');
 }

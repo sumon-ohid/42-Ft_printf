@@ -6,16 +6,16 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:21 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/02 09:03:22 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/03 12:58:33 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void    ft_print_c(va_list args)
+void	ft_print_c(va_list args)
 {
-    char c;
+	char	c;
 
-    c = va_arg(args, int);
-    write(1, &c, 1);
+	c = va_arg(args, int);
+	write(1, &c, 1);
 }
