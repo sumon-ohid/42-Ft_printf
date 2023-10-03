@@ -6,11 +6,11 @@
 #    By: msumon <msumon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/02 09:03:46 by msumon            #+#    #+#              #
-#    Updated: 2023/10/03 12:53:59 by msumon           ###   ########.fr        #
+#    Updated: 2023/10/03 13:00:04 by msumon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = 	ft_printf.c ft_print_c.c ft_print_s.c ft_print_d.c main.c \
+SRC = 	ft_printf.c ft_print_c.c ft_print_s.c ft_print_d.c \
 		ft_putchar.c ft_putnbr.c ft_print_p.c ft_print_i.c \
 		ft_print_u.c
 
@@ -20,7 +20,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-NAME = printf
+NAME = libftprintf.c
 
 all: $(NAME)
 
