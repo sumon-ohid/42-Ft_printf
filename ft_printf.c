@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 09:03:17 by msumon            #+#    #+#             */
+/*   Updated: 2023/10/03 12:37:59 by msumon           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
 int ft_printf(const char *str, ...)
@@ -17,7 +29,13 @@ int ft_printf(const char *str, ...)
                 ft_print_s(args);
             if(str[i + 1] == 'd')
                 ft_print_d(args);
-                i++;
+            if(str[i + 1] == '%')
+                ft_print_p(args);
+            if(str[i + 1] == 'i')
+                ft_print_i(args);
+            if(str[i + 1] == 'u')
+                ft_print_u(args);
+            i++;
         }
         else
         {

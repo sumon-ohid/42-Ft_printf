@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_p.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 09:03:40 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 12:44:36 by msumon           ###   ########.fr       */
+/*   Created: 2023/10/02 09:03:06 by msumon            #+#    #+#             */
+/*   Updated: 2023/10/03 11:27:14 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int main(void)
+void	ft_print_p(va_list args)
 {
-    char c;
-    char *str;
-    int x;
-    
-    str = "Hello Test";
-    x = 1114341;
-    c = 'A';
-    ft_printf("Char c is : %c %c\n", c,c);
-    ft_printf("String is : %s\n", str);
-    ft_printf("Int is : %d\n", x);
-    ft_printf("Int is : %%\n");
-    ft_printf("Int is : %i\n", x);
-    ft_printf("Int is : %u\n", x);
-    printf("Int is : %u\n", x);
+    int per;
 
-    return (0);
+    per = va_arg(args, int);
+    ft_putchar('%');
 }
