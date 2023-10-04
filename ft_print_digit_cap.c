@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_u.c                                       :+:      :+:    :+:   */
+/*   ft_print_digit_cap.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 12:30:06 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 13:20:36 by msumon           ###   ########.fr       */
+/*   Created: 2023/10/04 15:43:01 by msumon            #+#    #+#             */
+/*   Updated: 2023/10/04 15:43:08 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_print_u(va_list args)
+int	print_digit_cap(long n, int base)
 {
-	int	i;
+	int		count;
+	char	*symbols;
 
-	i = va_arg(args, int);
-	if (i > 0)
-		ft_putnbr(i);
+	symbols = "0123456789ABCDEF";
+	if (n < 0)
+	{
+		print_char('-');
+		return (print_digit_cap(-n, base) + 1);
+	}
+	else if (n < base)
+	{
+		return (print_char(symbols[n]));
+	}
 	else
-		ft_putchar('0');
+	{
+		count = print_digit_cap(n / base, base);
+		return (count + print_digit_cap(n % base, base));
+	}
 }

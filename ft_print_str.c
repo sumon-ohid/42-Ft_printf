@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_d.c                                       :+:      :+:    :+:   */
+/*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 09:03:25 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 13:20:15 by msumon           ###   ########.fr       */
+/*   Created: 2023/10/04 15:41:08 by msumon            #+#    #+#             */
+/*   Updated: 2023/10/04 15:41:15 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_print_d(va_list args)
+int	print_str(char *str)
 {
-	int	i;
+	int	count;
 
-	i = va_arg(args, int);
-	ft_putnbr(i);
+	count = 0;
+	while (*str != '\0')
+	{
+		print_char((int)*str);
+		count++;
+		str++;
+	}
+	return (count);
 }

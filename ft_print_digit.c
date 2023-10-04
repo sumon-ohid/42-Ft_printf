@@ -1,21 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_i.c                                       :+:      :+:    :+:   */
+/*   ft_print_digit.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 09:11:59 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 13:20:21 by msumon           ###   ########.fr       */
+/*   Created: 2023/10/04 15:41:54 by msumon            #+#    #+#             */
+/*   Updated: 2023/10/04 15:42:12 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_print_i(va_list args)
+int	print_digit(long n, int base)
 {
-	int	i;
+	int		count;
+	char	*symbols;
 
-	i = va_arg(args, int);
-	ft_putnbr(i);
+	symbols = "0123456789abcdef";
+	if (n < 0)
+	{
+		print_char('-');
+		return (print_digit(-n, base) + 1);
+	}
+	else if (n < base)
+	{
+		return (print_char(symbols[n]));
+	}
+	else
+	{
+		count = print_digit(n / base, base);
+		return (count + print_digit(n % base, base));
+	}
 }

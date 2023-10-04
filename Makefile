@@ -6,13 +6,12 @@
 #    By: msumon <msumon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/02 09:03:46 by msumon            #+#    #+#              #
-#    Updated: 2023/10/04 10:33:52 by msumon           ###   ########.fr        #
+#    Updated: 2023/10/04 15:48:31 by msumon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = 	ft_printf.c ft_print_c.c ft_print_s.c ft_print_d.c \
-		ft_putchar.c ft_putnbr.c ft_print_per.c ft_print_i.c \
-		ft_print_u.c main.c
+SRC = 	ft_print_char.c ft_print_digit.c ft_print_digit_cap.c \
+		ft_print_str.c ft_print_pointer.c ft_printf.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -20,7 +19,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-NAME = libftprintf
+NAME = libftprintf.a
 
 COLOR_GREEN = '\033[0;32m'
 COLOR_RED = '\033[0;31m'
@@ -30,8 +29,8 @@ END_COLOR = '\033[0m'
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
-#ar rcs $(NAME) $(OBJ)
+#$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 	@echo $(COLOR_GREEN)"👑 🥳 🥳 👑 Compiled Successfully !👑 🥳 🥳 👑"$(END_COLOR)
 
 %.o: %.c

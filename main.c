@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 09:03:40 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/04 10:14:36 by msumon           ###   ########.fr       */
+/*   Created: 2023/10/04 15:36:25 by msumon            #+#    #+#             */
+/*   Updated: 2023/10/04 15:47:16 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,23 @@
 
 int	main(void)
 {
-	char	c;
-	char	*str;
-	int		x;
+	int		count;
+	char	*ptr;
 
-	str = "Hello Test";
-	x = -2147483647;
-	c = 'A';
-	ft_printf("Char c is : %c\n", c);
-	ft_printf("String is : %s\n", str);
-	ft_printf("Int is : %d\n", x);
-	ft_printf("Int is : %%\n");
-	ft_printf("Int is : %i\n", x);
-	ft_printf("Int is : %u\n", x);
-
+	ptr = "Hello";
+	count = ft_printf(" 1 Hello %s\n", "Sumon");
+	ft_printf(" 1 The chars written are %d\n", count);
+	count = ft_printf(" 2 %x\n", 468);
+	ft_printf(" 2 The char written are %d\n", count);
+	count = ft_printf(" 3 %X\n", 468);
+	ft_printf(" 3 The char written are %d\n", count);
+	count = ft_printf(" 4 Char %c %c %c\n", 'A', 'B', 'C');
+	ft_printf(" 4 The char written are %d\n", count);
+	count = ft_printf(" 5 Number is :%d\n", -2147483648);
+	ft_printf(" 5 The char written are %d\n", count);
+	count = ft_printf("Pointer address: %p\n", (void *)ptr);
+	ft_printf("The chars written are %d\n", count);
+	count = printf("Pointer address: %p\n", (void *)ptr);
+	printf("The chars written are %d\n", count);
 	return (0);
 }
