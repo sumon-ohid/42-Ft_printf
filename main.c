@@ -6,7 +6,7 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:40 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 13:21:12 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/04 10:14:36 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int	main(void)
 	int		x;
 
 	str = "Hello Test";
-	x = 1114341;
+	x = -2147483647;
 	c = 'A';
-	ft_printf("Char c is : %c %c\n", c, c);
+	ft_printf("Char c is : %c\n", c);
 	ft_printf("String is : %s\n", str);
 	ft_printf("Int is : %d\n", x);
 	ft_printf("Int is : %%\n");

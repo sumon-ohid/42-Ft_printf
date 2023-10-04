@@ -6,7 +6,7 @@
 /*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:03:17 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/03 13:20:41 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/04 10:40:53 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ int	ft_printf(const char *str, ...)
 {
 	int		i;
 	va_list	args;
+	int len;
 
+	len = 0;
 	va_start(args, str);
 	i = 0;
 	while (str[i])
@@ -24,13 +26,13 @@ int	ft_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			if (str[i + 1] == 'c')
-				ft_print_c(args);
+				len += ft_print_c(args);
 			if (str[i + 1] == 's')
 				ft_print_s(args);
 			if (str[i + 1] == 'd')
 				ft_print_d(args);
 			if (str[i + 1] == '%')
-				ft_print_p();
+				ft_print_per();
 			if (str[i + 1] == 'i')
 				ft_print_i(args);
 			if (str[i + 1] == 'u')
@@ -44,5 +46,5 @@ int	ft_printf(const char *str, ...)
 		i++;
 	}
 	va_end(args);
-	return (i);
+	return (len);
 }
