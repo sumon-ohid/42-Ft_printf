@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_digit.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
+/*   By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:41:54 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/04 15:42:12 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/05 06:04:25 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	print_digit(long n, int base)
 	char	*symbols;
 
 	symbols = "0123456789abcdef";
+	count = 0;
 	if (n < 0)
 	{
 		print_char('-');

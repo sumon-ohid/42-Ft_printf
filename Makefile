@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msumon <msumon@student.42.fr>              +#+  +:+       +#+         #
+#    By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/02 09:03:46 by msumon            #+#    #+#              #
-#    Updated: 2023/10/04 15:48:31 by msumon           ###   ########.fr        #
+#    Updated: 2023/10/05 05:39:39 by msumon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = 	ft_print_char.c ft_print_digit.c ft_print_digit_cap.c \
-		ft_print_str.c ft_print_pointer.c ft_printf.c
+		ft_print_str.c ft_print_pointer.c ft_printf.c ft_strlen.c
 
 OBJ = $(SRC:.c=.o)
 

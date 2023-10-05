@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msumon <msumon@student.42.fr>              +#+  +:+       +#+        */
+/*   By: msumon <msumon@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:41:08 by msumon            #+#    #+#             */
-/*   Updated: 2023/10/04 15:41:15 by msumon           ###   ########.fr       */
+/*   Updated: 2023/10/04 14:03:12 by msumon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,18 @@ int	print_str(char *str)
 	int	count;
 
 	count = 0;
-	while (*str != '\0')
+	if (!str)
 	{
-		print_char((int)*str);
-		count++;
-		str++;
+		return (print_str("(null)"));
+	}
+	else
+	{
+		while (*str != '\0')
+		{
+			print_char(*str);
+			count++;
+			str++;
+		}
 	}
 	return (count);
 }
