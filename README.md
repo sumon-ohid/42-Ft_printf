@@ -22,14 +22,14 @@ Compile your code and the ft_printf library together:
 gcc -o my_program my_program.c libftprintf.a
 ```
 ## Supported Format Specifiers
-%c: Character.
-%s: String.
-%p: Pointer.
-%d: Decimal (int).
-%i: Integer.
-%x: Hexadecimal (lowercase).
-%X: Hexadecimal (uppercase).
-%%: Percent sign.
+%c: Character\n
+%s: String\n
+%p: Pointer\n
+%d: Decimal (int)\n
+%i: Integer\n
+%x: Hexadecimal (lowercase)\n
+%X: Hexadecimal (uppercase)\n
+%%: Percent sign\n
 
 ## Return Value
 The function returns the number of characters printed (excluding the null byte).
